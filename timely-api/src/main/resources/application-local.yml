@@ -1,0 +1,8 @@
+spring:
+  datasource:
+    url: jdbc:mariadb://svc.sel3.cloudtype.app:30348/timely?serverTimezone=Asia/Seoul&characterEncoding=UTF-8
+    username: dev
+    password: work1234!
+
+  jpa:
+    show-sql: true

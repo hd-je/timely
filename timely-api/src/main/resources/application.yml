@@ -1,0 +1,22 @@
+spring:
+  datasource:
+    driver-class-name: org.mariadb.jdbc.Driver
+
+  jpa:
+    hibernate:
+      ddl-auto: validate   # ?? ?? update / ??? validate ??
+    properties:
+      hibernate:
+        format_sql: true
+    open-in-view: false
+    show-sql: true
+
+  profiles:
+    active: local
+  application:
+    name: timely
+
+logging:
+  level:
+    org.hibernate.SQL: info
+    org.hibernate.type.descriptor.sql: trace
